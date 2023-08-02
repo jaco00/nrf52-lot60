@@ -110,7 +110,7 @@ void command_timer_init(void)
 
 static bool command_common(uint8_t code);
 
-static void switch_default_layer(uint8_t layer);
+//static void switch_default_layer(uint8_t layer);
 
 command_state_t command_state = ONESHOT;
 
@@ -273,9 +273,10 @@ static bool command_common(uint8_t code)
     }
     return true;
 }
-
+/*
 static void switch_default_layer(uint8_t layer)
 {
     default_layer_set(1UL << layer);
     clear_keyboard();
 }
+*/
