@@ -1,6 +1,6 @@
 #pragma once
 
-#define PRODUCT "Lot60.G" /* 硬件名称，用于蓝牙显示 */
+#define PRODUCT "Lot60.G2" /* 硬件名称，用于蓝牙显示 */
 #define DEVICE_VER 0x0003 /* 硬件版本 */
 
 #define LED_CAPS 19
@@ -35,4 +35,4 @@ static const uint8_t column_pin_array[MATRIX_COLS] = { 16, 15, 14, 13, 12, 11, 2
 // #define LED_DFU_POSITIVE
 
 // 不存在Bootloader，设置Bootloader的地址到更高的区域以防止出现问题
-#define CUSTOM_BOOTLOADER_ADDR 0x2F000
+//#define CUSTOM_BOOTLOADER_ADDR 0x2F000

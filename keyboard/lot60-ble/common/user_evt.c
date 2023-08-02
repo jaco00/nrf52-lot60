@@ -164,3 +164,4 @@ void rgb_led_event_handler(enum user_event event, void* arg)
 }
 
 EVENT_HANDLER(rgb_led_event_handler);
+

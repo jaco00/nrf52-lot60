@@ -57,11 +57,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define BOOTMAGIC_KEY_ERASE_BOND KC_E /* 删除所有绑定的按键 */
 
 // 键盘省电参数
-#define SLEEP_SLOW_TIMEOUT 15 // 键盘闲置多久后转入慢速扫描模式 (s)
-#define SLEEP_OFF_TIMEOUT 600 // 键盘闲置多久后转入自动关机 (s)
+#define SLEEP_SLOW_TIMEOUT 100 // 键盘闲置多久后转入慢速扫描模式 (s)
+#define SLEEP_OFF_TIMEOUT 3600 // 键盘闲置多久后转入自动关机 (s)
 #define KEYBOARD_SCAN_INTERVAL 1 // 键盘最小时间单位TICK (ms)
 #define KEYBOARD_FAST_SCAN_INTERVAL 10 // 通常模式下，多久扫描一次键盘 (ms)
-#define KEYBOARD_SLOW_SCAN_INTERVAL 100 // 慢速模式下，多久扫描一次键盘 (ms)
+#define KEYBOARD_SLOW_SCAN_INTERVAL 50 // 慢速模式下，多久扫描一次键盘 (ms)
 #define DCDC_ENABLED // 启用DC-DC以降低功耗
 
 // 功率相关
@@ -69,7 +69,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define HIGH_TX_POWER // 高发射功率
 
 // LED自动熄灭时长(s)，设为0则不自动熄灭
-#define LED_AUTOOFF_TIME 5
+#define LED_AUTOOFF_TIME 20 
 
 // 需要输入配对码
 // #define PASSKEY_REQUIRED

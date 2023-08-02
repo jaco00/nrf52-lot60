@@ -151,6 +151,7 @@ static bool command_common(uint8_t code)
         keyboard_nkro = !keyboard_nkro;
         break;
 #endif
+    /*
     case KC_0:
     case KC_F10:
         //切换默认层
@@ -164,6 +165,7 @@ static bool command_common(uint8_t code)
         //切换默认层
         switch_default_layer((code - KC_F1) + 1);
         break;
+    */
     case KC_M:
 #ifdef HAS_USB
         //USB与蓝牙输入模式切换
@@ -223,6 +225,7 @@ static bool command_common(uint8_t code)
         rgblight_decrease_val();
         break;
 #endif
+    /*
     case KC_B:
         //重启到DFU模式
         clear_keyboard();
@@ -231,6 +234,7 @@ static bool command_common(uint8_t code)
 #endif
         app_timer_start(command_run_timer, APP_TIMER_TICKS(1000), (void*)(uint32_t)COMMAND_DFU);
         break;
+    */
     case KC_P:
         //休眠
         clear_keyboard();
@@ -257,11 +261,13 @@ static bool command_common(uint8_t code)
         leds_switch();
         break;
 #endif
+    /*
     case KC_I:
         //重置键盘
         clear_keyboard();
         app_timer_start(command_run_timer, APP_TIMER_TICKS(200), (void*)(uint32_t)COMMAND_DEL_STORAGE);
         break;
+    */
     default:
         return false;
     }
